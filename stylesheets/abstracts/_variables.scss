@@ -1,0 +1,39 @@
+/// Fonts
+/// @type List
+$text-font-stack: 'Roboto', sans-serif !default;
+
+/// Font Weights
+/// @type Number
+$text-regular: 400;
+$text-medium: 500;
+$text-bold: 700;
+
+/// Black
+/// @type Color
+$black: #222831;
+
+/// Dark Gray Blue
+/// @type Color
+$dark-gray-blue: #393e46;
+
+/// Strong Cyan
+/// @type Color
+$strong-cyan: #00adb5;
+
+/// Light Gray
+/// @type Color
+$light-gray: #eeeeee;
+
+/// Yellow
+/// @type Color
+$yellow: #ffc300;
+
+/// Bright Blue
+$bright-blue: #3490de;
+
+/// Strong Orange
+$strong-orange: #d25210;
+
+
+/// Transitions
+$smooth-trans: all 0.3s ease 0s;
