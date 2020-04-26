@@ -304,4 +304,64 @@ html {
   color: #ffffff;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+.todo-list-app {
+  margin-top: 12rem;
+  padding: 1.2rem 4rem;
+}
+.todo-list-app section {
+  margin: 3rem 8rem;
+  padding: 3rem 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #cccccc;
+}
+.todo-list-app section li {
+  padding: 0.5rem 0;
+  list-style: none;
+  font-size: 2rem;
+}
+.todo-list-app #newTodo {
+  margin: 1rem 0 0;
+  padding: 1rem 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  color: #eeeeee;
+}
+.todo-list-app #newTodo {
+  animation-name: glowout;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+}
+.todo-list-app #newTodo:hover, .todo-list-app #newTodo:focus {
+  animation-name: glowin;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+}
+
+@keyframes glowin {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes glowout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
