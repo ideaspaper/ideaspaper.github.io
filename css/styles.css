@@ -195,6 +195,7 @@ html {
 
 a {
   color: inherit;
+  outline: none;
   text-decoration: none;
 }
 
@@ -207,6 +208,9 @@ nav {
   width: 100%;
   padding: 1.2rem 4rem;
   background-color: #222831;
+}
+nav .active {
+  color: #ffc300;
 }
 nav .logo {
   margin-right: auto;
@@ -231,6 +235,7 @@ nav button {
   font-size: 2rem;
   border: none;
   border-radius: 2rem;
+  outline: 0;
   cursor: pointer;
   background-color: #3490de;
   color: #eeeeee;
