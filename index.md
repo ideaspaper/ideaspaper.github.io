@@ -18,4 +18,6 @@ Welcome to my personal page! I am a person with multiple interests. In this page
 - [Crosswords - eps. 2](https://ideaspaper.github.io/crosswords-2/)
 - [Crosswords - eps. 3](https://ideaspaper.github.io/crosswords-3/)
 
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer>
+
+</script>
