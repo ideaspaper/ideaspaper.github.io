@@ -9,7 +9,7 @@ Welcome to my personal page! I am a person with multiple interests. In this page
 
 ## Embedded Systems Notes
 
-- :cat: More to come...
+- 😺️ More to come...
 
 ## Small DOM Apps
 
@@ -17,6 +17,8 @@ Welcome to my personal page! I am a person with multiple interests. In this page
 - [Crosswords - eps. 1](https://ideaspaper.github.io/crosswords-1/)
 - [Crosswords - eps. 2](https://ideaspaper.github.io/crosswords-2/)
 - [Crosswords - eps. 3](https://ideaspaper.github.io/crosswords-3/)
+
+## Contact Me
 
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer>
 </script>
