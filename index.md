@@ -22,4 +22,8 @@ Welcome to my personal page! I am a person with multiple interests. In this page
 
 ## Contact Me
 
-<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="danielharyono"><a class="LI-simple-link" href='https://id.linkedin.com/in/danielharyono?trk=profile-badge'>Daniel Haryono</a></div>
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="danielharyono">
+<a class="LI-simple-link" href='https://id.linkedin.com/in/danielharyono?trk=profile-badge'>
+Daniel Haryono
+</a>
+</div>
