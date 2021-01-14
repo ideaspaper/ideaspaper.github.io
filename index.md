@@ -5,8 +5,8 @@ Welcome to my personal page! I am a person with multiple interests. In this page
 
 ## Programming notes
 
-- [Basic JavaScript Notes](https://github.com/ideaspaper/p0-class-notes/README.md)
-- [Design Pattern Notes](https://github.com/ideaspaper/design-pattern-notes/README.md)
+- [Basic JavaScript Notes](https://github.com/ideaspaper/p0-class-notes/blob/master/README.md)
+- [Design Pattern Notes](https://github.com/ideaspaper/design-pattern-notes/blob/master/README.md)
 
 ## Embedded system notes
 
