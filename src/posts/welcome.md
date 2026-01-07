@@ -1,10 +1,12 @@
 ---
 title: Welcome to My Blog
-date: 2024-05-20
+date: 2026-01-07
 description: This is the very first post on my new React-based markdown blog.
 ---
 
 # Hello World!
+
+![Hello World](/images/hello-world.jpg)
 
 Welcome to my simple, **markdown-powered** blog.
 

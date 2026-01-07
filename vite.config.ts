@@ -1,11 +1,12 @@
 import * as path from 'path';
+
 import react from '@vitejs/plugin-react';
 import {defineConfig as defineViteConfig, mergeConfig} from 'vite';
 import {defineConfig as defineVitestConfig} from 'vitest/config';
 
 // https://vitejs.dev/config/
 const viteConfig = defineViteConfig({
-  base: '/pp/', // Set base path for GitHub Pages (replace 'pp' with your repo name if different)
+  base: '/',
   assetsInclude: ['**/*.md'],
   plugins: [
     react(),
@@ -24,6 +25,20 @@ const viteConfig = defineViteConfig({
   ],
   resolve: {
     alias: [{find: '@', replacement: path.resolve(__dirname, 'src')}],
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'markdown-vendor': [
+            'react-markdown',
+            'remark-gfm',
+            'react-syntax-highlighter',
+          ],
+        },
+      },
+    },
   },
 });
 

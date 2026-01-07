@@ -1,5 +1,6 @@
 import {Suspense, lazy} from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
 import Layout from './components/Layout';
 import './index.css';
 
@@ -8,15 +9,15 @@ const Home = lazy(() => import('./pages/Home'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
-function App() {
-  const LoadingFallback = () => (
-    <Layout>
-      <p>Loading...</p>
-    </Layout>
-  );
+const LoadingFallback = () => (
+  <Layout>
+    <p>Loading...</p>
+  </Layout>
+);
 
+function App() {
   return (
-    <BrowserRouter basename="/pp/">
+    <BrowserRouter basename="/">
       <Routes>
         <Route
           path="/"

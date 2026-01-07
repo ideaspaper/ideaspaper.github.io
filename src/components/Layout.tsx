@@ -24,7 +24,7 @@ export default function Layout({children}: {children: React.ReactNode}) {
       <header>
         <nav>
           <Link to="/" className="logo">
-            My Blog
+            ideaspaper
           </Link>
           <button onClick={toggleTheme} className="theme-toggle">
             {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
