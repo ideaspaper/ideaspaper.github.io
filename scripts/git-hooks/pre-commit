@@ -1,0 +1,27 @@
+#!/bin/bash
+
+printf "Running pre-commit hook\n"
+
+commit_fail() {
+    printf "Commit failed\n"
+    exit 1
+}
+
+run_command() {
+    printf "> Running %s\n" "$1"
+    eval "$1"
+    if [[ $? != 0 ]]; then
+        commit_fail
+    fi
+}
+
+set -e
+
+# Run tests on all files (safety net)
+run_command "pnpm run test"
+
+# Run lint-staged to format/lint ONLY staged files
+# This prevents accidentally committing unstaged changes
+run_command "npx lint-staged"
+
+printf "Done\n"

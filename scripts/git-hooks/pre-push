@@ -1,0 +1,22 @@
+#!/bin/bash
+
+printf "Running pre-push hook\n"
+
+push_fail() {
+    printf "Push failed\n"
+    exit 1
+}
+
+run_command() {
+    printf "> Running %s\n" "$1"
+    eval "$1"
+    if [[ $? != 0 ]]; then
+        push_fail
+    fi
+}
+
+set -e
+
+run_command "pnpm run test"
+
+printf "Done\n"

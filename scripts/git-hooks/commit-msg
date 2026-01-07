@@ -1,0 +1,22 @@
+#!/bin/bash
+
+printf "Running commit-msg hook\n"
+
+commit_msg_fail() {
+    printf "Wrong commit message format\n"
+    exit 1
+}
+
+run_command() {
+    printf "> Running %s\n" "$1"
+    eval "$1"
+    if [[ $? != 0 ]]; then
+        commit_msg_fail
+    fi
+}
+
+set -e
+
+run_command "npx --no -- commitlint --edit ${1}"
+
+printf "Done\n"
