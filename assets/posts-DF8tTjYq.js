@@ -1,3 +1,3 @@
-import{_ as l}from"./index-l6QnOpZD.js";function d(s){const e=s.split(`
+import{_ as l}from"./index-GFDYlbPq.js";function d(s){const e=s.split(`
 `),t={};let o=0;if(e[0]?.trim()==="---"){let n=1;for(;n<e.length&&e[n]?.trim()!=="---";){const i=e[n],a=i.indexOf(":");if(a!==-1){const r=i.slice(0,a).trim();let c=i.slice(a+1).trim();c.startsWith('"')&&c.endsWith('"')&&(c=c.slice(1,-1)),t[r]=c}n++}o=n+1}return{data:t,content:e.slice(o).join(`
 `)}}async function p(){const s=Object.assign({"../posts/welcome.md":()=>l(()=>import("./welcome-B6i2y3E8.js"),[]).then(t=>t.default)}),e=[];for(const t in s){const o=await s[t](),{data:n,content:i}=d(o),a=t.split("/").pop()?.replace(".md","")||"";e.push({slug:a,title:n.title||"Untitled",date:n.date||"",description:n.description||"",content:i})}return e.sort((t,o)=>new Date(o.date).getTime()-new Date(t.date).getTime())}async function u(s){return(await p()).find(t=>t.slug===s)}export{u as a,p as g};
