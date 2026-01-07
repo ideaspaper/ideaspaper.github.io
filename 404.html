@@ -35,9 +35,9 @@
             .join('/') +
           '/?/' +
           l.pathname
-            .slice(1 + segmentCount)
-            .split('/')
             .slice(1)
+            .split('/')
+            .slice(segmentCount)
             .join('/')
             .replace(/&/g, '~and~') +
           (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
